@@ -1,0 +1,54 @@
+<!-- https://teachablemachine.withgoogle.com/models/56EO5wUYK/ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Hand Geastures App</title>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <h2 class="heading">Hand Geastures App</h2>
+      <h2>| &#128075 |
+        &#9996 |
+        &#128076 |
+         &#128077 |</h2>
+        </div>
+        <br>
+        <br>
+        <center>
+           
+        
+              <p style="font-size: 22px;">Model can identify various geastures, including: </p>
+              <b class="name_of_objects"> 
+                Peace
+                <br>
+                Thumbs-Up
+                <br>
+                Ok
+                <br>
+              <label>Webcam View - </label>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+              <div id="camera"></div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div id="result"></div>
+          </div>
+              <br><br>
+             <button class="btn btn-primary" onclick="take_snapshot()">Show Your object</button>
+             <button class="btn btn-primary" onclick="check()">Predict</button>
+              <p style="font-size: 22px;">What is it?: </p><h1><span id="object"><b></b></span></h1> 
+    </center>
+    <div id="result"></div>
+ 
+    <script src="main.js"></script>
+</body>
+</html>
